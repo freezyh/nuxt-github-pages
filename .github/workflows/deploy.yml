@@ -21,9 +21,6 @@ jobs:
         with:
           node-version: '21' # 使用适合的 Node.js 版本
 
-      - name: Enable npm
-        run: corepack enable # 启用 pnpm 或 yarn
-
       - name: Install Dependencies
         run: npm install # 或 yarn install，根据你的偏好选择
 
