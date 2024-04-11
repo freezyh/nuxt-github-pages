@@ -6,11 +6,11 @@ export default defineNuxtConfig({
     baseURL: '/nuxt-github-pages/',
     buildAssetsDir: 'nuxt_assets',
   }, 
-  nitro: {
+  /* nitro: {
     output: {
       publicDir: path.join(__dirname, 'docs')
     }
-  },
+  }, */
   experimental: {
       payloadExtraction: false
   },
