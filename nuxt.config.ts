@@ -3,7 +3,7 @@ const path = require('path');
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: '/nuxt-github-pages/',
+    // baseURL: '/nuxt-github-pages/',
     /* buildAssetsDir: 'nuxt_assets', */
   }, 
   /* nitro: {
