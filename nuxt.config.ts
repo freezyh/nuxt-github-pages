@@ -4,14 +4,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: '/nuxt-github-pages/',
-    buildAssetsDir: 'nuxt_assets',
+    /* buildAssetsDir: 'nuxt_assets', */
   }, 
   /* nitro: {
     output: {
       publicDir: path.join(__dirname, 'docs')
     }
   }, */
-  experimental: {
+  /* experimental: {
       payloadExtraction: false
-  },
+  }, */
 })
