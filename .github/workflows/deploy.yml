@@ -19,15 +19,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '21' # 使用适合的 Node.js 版本
+          node-version: "20" # 使用适合的 Node.js 版本
+
+      - name: Enable pnpm
+        run: corepack enable # 启用 pnpm 或 yarn
 
       - name: Install Dependencies
-        run: npm install # 或 yarn install，根据你的偏好选择
+        run: pnpm install # 或 yarn install，根据你的偏好选择
 
       - name: Generate Static Site
-        run: npm generate # 生成静态站点的命令
+        run: pnpm generate # 生成静态站点的命令
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4 # 这个 action 能将你的构建产物，作为新增内容提交到 gh-pages 分支
         with:
-          folder: .output/public # Nuxt3 生成的静态文件夹名称
+          folder: .output/public # 修改为 Nuxt.js 生成的静态文件夹名称
